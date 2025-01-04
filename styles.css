@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Encabezado */
+header {
+    background-color: #8B4513; /* Marrón */
+    color: yellow;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Sección principal */
+main {
+    margin: 20px;
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+}
+
+/* Tarjetas de producto */
+.product {
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos en el contenedor */
+    gap: 10px; /* Espacio entre los elementos */
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo de la imagen en el producto */
+.product-image {
+    width: 100px; /* Aumento el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+}
+
+/* Estilo del precio */
+.product p {
+    text-align: center; /* Centra el texto */
+}
+
+/* Botón "comprar chuchino" */
+.buy-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre el precio y el botón */
+    width: auto; /* Asegura que el botón no ocupe todo el ancho */
+    align-self: center; /* Centra el botón debajo del precio */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página al fondo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 5%; /* Ocupa la mitad del alto de la pantalla */
+    bottom: 0;
+}
+
+/* Estilos generales para el modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Asegurarse de que el modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* El modal ocupará toda la pantalla */
+    height: 100%; /* El modal ocupará toda la pantalla */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+}
+
+/* Estilo para la imagen dentro del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%; /* Ancho de la imagen al 90% de la pantalla */
+    max-width: 700px; /* Máximo tamaño para la imagen */
+}
+
+/* Estilo para el texto de la descripción */
+#caption {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

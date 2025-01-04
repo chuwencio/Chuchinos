@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a la tienda de chuchinos</h1>
+    </header>
+
+    <!-- Productos etap -->
+    <main>
+        <h2>Productos</h2>
+        <div>
+            <div class="product">
+                <h3>mike</h3>
+                <img src="mike.jpg" alt="Foto de Mike" class="product-image">
+                <p>come poco molesta mucho</p>
+                <p><strong>Precio: €100000</strong></p>
+                <button class="buy-button" data-product="mike">comprar chuchino</button>
+            </div>
+            <div class="product">
+                <h3>lolo</h3>
+            <img src="lolo.jpg" alt="Foto de lolo" class="product-image">
+                <p> come mucho molesta poco</p>
+                <p><strong>Precio: €100000</strong></p>
+                <button class="buy-button" data-product="lolo">comprar chuchino</button>
+            </div>
+        </div>
+<section id="cart">
+    <h2>Carrito de compras</h2>
+    <ul id="cart-items"></ul>
+</section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>todos los derechos reservados por la chuchi</p>
+    </footer>
+<!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content">
+    <div id="caption"></div>
+</div>
+
+    <!-- Conectar JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
